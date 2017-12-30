@@ -37,6 +37,8 @@
 		<span class="glyphicon glyphicon-equalizer"></span>&nbsp;Contact Me</a></li>
 	<li>
 	</ul>
+                
+
 			</div>
 
 	
@@ -150,7 +152,8 @@ values('$name','$phone', '$email', '$comment')";
 $execute = mysql_query($query);
 if ($execute)
 {
-	echo "<span class='success'>Record has been added.</span>";
+echo "Record added";
+echo'<script>window.open("index.php?Deleted=Recored Added Successfully","_self")</script>';
 }
 }
 
@@ -172,7 +175,7 @@ if ($execute)
 			</fieldset>
 			</form>
             <table style="clear:left;">
-				<caption>Comments from viewerrs like you.</caption>
+				<caption>Comments from viewers like you.</caption>
 				<tr>
 					<th>ID</th>
 					<th>Name</th>
@@ -204,6 +207,18 @@ if ($execute)
 
 				</table>
                 <br/>
+                                    <table style="width: 100%;">
+     
+                <caption>News From BBC</caption>
+    <thead>
+          <tr>
+               <th>Article</th>
+               <th>Description</th>
+           </tr>
+     </thead>
+     <tbody id="tbody">
+     </tbody>
+</table>
         </div>
 
 			<div class="col-sm-2" style="color:#fff;">
@@ -223,6 +238,7 @@ if ($execute)
 	</div>	
 	
 	</div>
+
 
 		
 	</body>

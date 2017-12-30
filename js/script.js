@@ -23,6 +23,27 @@ $(function(index, weather) { //output for json into html page, id on html
         });
 })
 });
+//newsAPI
+$(function(){var url = 'https://newsapi.org/v2/top-headlines?' +
+          'sources=bbc-news&' +
+          'apiKey=a4e406a786cc4af7a151b9ad6bc0f659';
+            $.getJSON(url).done(function(data){
+                console.log(data);
+            $(function(index,articles){
+
+            $.each(data, function (index, articles) {
+            var eachrow = "<tr>" 
+                 + "<td>" + data.articles.title + "</td>"
+                 + "<td>" + data.articles.description + "</td>"
+                 + "</tr>";
+        $('#tbody').append(eachrow);
+            })
+            })
+            
+            
+})
+            })
+
 
    // $(function(){//brings in pop-up ad/lightbox
         //$(".lightbox").delay(500).fadeIn(5000);//slowly fades in at 5 seconds
