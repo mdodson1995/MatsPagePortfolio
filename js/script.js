@@ -24,25 +24,29 @@ $(function(index, weather) { //output for json into html page, id on html
 })
 });
 //newsAPI
-$(function(){var url = 'https://newsapi.org/v2/top-headlines?' +
-          'sources=bbc-news&' +
-          'apiKey=a4e406a786cc4af7a151b9ad6bc0f659';
+$(function(){var url = 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=bc11dfdc86234662aadaa5c17b360705';
             $.getJSON(url).done(function(data){
                 console.log(data);
-            $(function(index,articles){
+                var table = $("<table>").html("<tr>" + "<th>" + "Author" + "</th>" + "<th>" + "Description" + "</th>" + "<th>" + "Published at" + "</th>" + "</tr>" +
+                                               "<tr>" +"<td>" + data.articles["0"].author + "</td>"  +
+                                                "<td>" + data.articles["0"].description + "</td>"  + 
+                                             "<td>" + data.articles["0"].publishedAt + "</td>" + "</tr>" +
+                                              "<tr>" +"<td>" + data.articles[1].author + "</td>"  +
+                                                "<td>" + data.articles[1].description + "</td>"  + 
+                                             "<td>" + data.articles[1].publishedAt + "</td>" + "</tr>" +
+                                              "<tr>" +"<td>" + data.articles[2].author + "</td>"  +
+                                                "<td>" + data.articles[2].description + "</td>"  + 
+                                             "<td>" + data.articles[2].publishedAt + "</td>" + "</tr>" +
+                                              "<tr>" +"<td>" + data.articles[3].author + "</td>"  +
+                                                "<td>" + data.articles[3].description + "</td>"  + 
+                                             "<td>" + data.articles[3].publishedAt + "</td>" + "</tr>");
+                table.appendTo("#news");
+                });
 
-            $.each(data, function (index, articles) {
-            var eachrow = "<tr>" 
-                 + "<td>" + data.articles.title + "</td>"
-                 + "<td>" + data.articles.description + "</td>"
-                 + "</tr>";
-        $('#tbody').append(eachrow);
-            })
-            })
             
             
 })
-            })
+            
 
 
    // $(function(){//brings in pop-up ad/lightbox

@@ -12,6 +12,7 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script	src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 			<script src="js/script.js"></script>
+            <script src = "https://code.jquery.com/jquery-1.12.4.js"></script>
             <script src="js/weather.js"></script>
 	</head>
 	<body>
@@ -207,18 +208,9 @@ echo'<script>window.open("index.php?Deleted=Recored Added Successfully","_self")
 
 				</table>
                 <br/>
-                                    <table style="width: 100%;">
-     
-                <caption>News From BBC</caption>
-    <thead>
-          <tr>
-               <th>Article</th>
-               <th>Description</th>
-           </tr>
-     </thead>
-     <tbody id="tbody">
-     </tbody>
-</table>
+                <caption>Top News from Tech Crunch, API from <a href="https://newsapi.org/", target="_blank">NewsAPI.org</a></caption>
+                <pre><code id="news"></code></pre>
+                <br/>
         </div>
 
 			<div class="col-sm-2" style="color:#fff;">
