@@ -111,12 +111,27 @@
 
 				</table>
 			<h2 id="experience">Experience/Skills</h2><a href="#" class="scollup">Back to Top</a>
-                <table>
+                <table width = "100%">
                     <caption>Skills</caption>
                         <tr>
                         <th>Skill</th>
-                        <th>Example</th>
                         <th>Certificate, if applicable</th>
+                        </tr>
+                        <tr>
+                        <td>HTML, CSS</td>
+                        <td><img src = "img/certs/CIW.PNG" style="width:50%; border: 2px solid #000; border-radius: 10px;"></td>
+                        </tr>
+                        <tr>
+                        <td>SQL SERVER/MYSQL</td>
+                        <td><img src = "img/certs/DB.PNG" style="width:50%; border: 2px solid #000; border-radius: 10px;"></td>
+                        </tr>
+                        <tr>
+                        <td>jQuery/JavaScript</td>
+                        <td><img src = "img/certs/jQueryCourse.png" style="width:50%; border: 2px solid #000; border-radius: 10px;"></td>                    
+                        </tr>
+                        <tr>
+                        <td>PHP</td>
+                        <td><img src = "img/certs/PHPCourse.jpg" style="width:50%; border: 2px solid #000; border-radius: 10px;"></td>
                         </tr>
                 
                 </table>
@@ -208,7 +223,7 @@ echo'<script>window.open("index.php?Deleted=Recored Added Successfully","_self")
 
 				</table>
                 <br/>
-                <caption>Top News from Tech Crunch, API from <a href="https://newsapi.org/", target="_blank">NewsAPI.org</a></caption>
+                <caption>Top News from <a href="https://techcrunch.com" target="_blank">Tech Crunch</a>, API from <a href="https://newsapi.org/", target="_blank">NewsAPI.org</a></caption>
                 <pre><code id="news"></code></pre>
                 <br/>
         </div>
