@@ -70,7 +70,7 @@ $(function(){var url = 'https://newsapi.org/v2/top-headlines?sources=techcrunch&
         }, 600);
         return false;
     });
-$(function() {
+$(function() {//gallery 1
     var galleryImage = $(".gallery").find("img").first();
 	var images = [
     "img/profile_pic.jpg",
@@ -78,6 +78,24 @@ $(function() {
     "img/bowling_scores.jpg",
 	"img/friends.jpg",
     "img/halo.jpg",];
+	
+	var i = 0;
+	
+	setInterval(function() {
+	i = (i + 1) % images.length;
+	galleryImage.fadeOut(function() {
+		$(this).attr("src", images[i]).css("width", "300").css("height", "300");
+		$(this).fadeIn();
+	});
+	}, 4000); 
+});
+
+$(function() {//gallery 2
+    var galleryImage = $(".gallery2").find("img").first();
+	var images = [
+    "img/certs/DB.PNG.",
+    "img/certs/jQueryCourse.png",
+    "img/certs/PHPCourse.jpg",];
 	
 	var i = 0;
 	

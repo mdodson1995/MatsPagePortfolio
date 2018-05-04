@@ -111,30 +111,9 @@
 
 				</table>
 			<h2 id="experience">Experience/Skills</h2><a href="#" class="scollup">Back to Top</a>
-                <table width = "100%">
-                    <caption>Skills</caption>
-                        <tr>
-                        <th>Skill</th>
-                        <th>Certificate, if applicable</th>
-                        </tr>
-                        <tr>
-                        <td>HTML, CSS</td>
-                        <td><img src = "img/certs/CIW.PNG" style="width:50%; border: 2px solid #000; border-radius: 10px;"></td>
-                        </tr>
-                        <tr>
-                        <td>SQL SERVER/MYSQL</td>
-                        <td><img src = "img/certs/DB.PNG" style="width:50%; border: 2px solid #000; border-radius: 10px;"></td>
-                        </tr>
-                        <tr>
-                        <td>jQuery/JavaScript</td>
-                        <td><img src = "img/certs/jQueryCourse.png" style="width:50%; border: 2px solid #000; border-radius: 10px;"></td>                    
-                        </tr>
-                        <tr>
-                        <td>PHP</td>
-                        <td><img src = "img/certs/PHPCourse.jpg" style="width:50%; border: 2px solid #000; border-radius: 10px;"></td>
-                        </tr>
-                
-                </table>
+                    <div class="gallery2">
+                    <img style="padding:auto; border: 2px solid black; border-radius:15px; ;" src="img/certs/CIW.PNG" width = "300" height="300" alt="Certificates">
+                    </div>
 
 			     <table>
                     <caption>Jobs/Internships</caption>
